@@ -1,0 +1,3 @@
+<ul>
+  <li *ngFor="let item of nav"><a routerLink="/{{item.name}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{item.title}}</a></li>
+</ul>
