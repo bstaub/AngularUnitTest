@@ -9,8 +9,8 @@ export class ContentService {
   constructor() {
     this.liste = [
       {id: 1, name: 'Bruno', beschreibung: 'Hallo Bruno'},
-      {id: 1, name: 'Hans', beschreibung: 'Hallo Hans!'},
-      {id: 1, name: 'Isabel', beschreibung: 'Hallo Isabel Eberling'},
+      {id: 2, name: 'Hans', beschreibung: 'Hallo Hans!'},
+      {id: 3, name: 'Isabel', beschreibung: 'Hallo Isabel Eberling'},
     ];
   }
   getListe(): Content[] {

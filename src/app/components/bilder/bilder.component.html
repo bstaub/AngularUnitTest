@@ -1,3 +1,5 @@
-<p>
-  bilder works!
-</p>
+<div class="container">
+  <div class="row">
+    <a *ngFor="let image of images" href="{{image.link}}"><img src="{{image.imageurl}}&text={{image.name}}" alt="{{image.name}}"></a>
+  </div>
+</div>

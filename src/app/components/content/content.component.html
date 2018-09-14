@@ -1,5 +1,13 @@
-<ul>
+<h3>Personenliste</h3>
+<ul class="personenListe">
   <li *ngFor="let item of liste">
-    {{item.id}} | {{item.name}} | {{item.beschreibung}}
+    Nr:{{item.id}} {{item.name}} <a href="#" (click)="seletedPerson($event, item)">mehr</a>
   </li>
 </ul>
+
+<h3>PersonenDetail</h3>
+<div *ngIf="selectedItem" class="personDetail">
+  {{selectedItem.beschreibung}}
+</div>
+
+

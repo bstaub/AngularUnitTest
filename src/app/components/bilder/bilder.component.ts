@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Image} from '../modules/Image';
+import {Images} from '../modules/mock-images';
 
 @Component({
   selector: 'app-bilder',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BilderComponent implements OnInit {
 
+  public images: Image[] = Images;
   constructor() { }
 
   ngOnInit() {

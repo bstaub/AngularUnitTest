@@ -9,9 +9,15 @@ import {ContentService} from '../shared/content.service';
 })
 export class ContentComponent implements OnInit {
   public liste: Content[];
+  public selectedItem: Content;
   constructor(private content: ContentService) { }
 
   ngOnInit() {
     this.liste = this.content.getListe();
+  }
+
+  seletedPerson(e, item: Content): void {
+    e.preventDefault();
+    this.selectedItem = item;
   }
 }
