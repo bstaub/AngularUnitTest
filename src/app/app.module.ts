@@ -11,6 +11,7 @@ import { BilderComponent } from './components/bilder/bilder.component';
 import {ContentService} from './components/shared/content.service';
 import {NavService} from './components/shared/nav.service';
 import { StartseiteComponent } from './components/startseite/startseite.component';
+import { PagesComponent } from './components/pages/pages.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { StartseiteComponent } from './components/startseite/startseite.componen
     ContentComponent,
     NotfoundComponent,
     BilderComponent,
-    StartseiteComponent
+    StartseiteComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,

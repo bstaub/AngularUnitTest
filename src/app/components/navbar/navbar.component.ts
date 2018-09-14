@@ -9,10 +9,12 @@ import {Nav} from '../modules/Nav';
 })
 export class NavbarComponent implements OnInit {
   public nav: Nav[];
+  public navCount: number;
   constructor(private navService: NavService) { }
 
   ngOnInit() {
     this.nav = this.navService.getNav();
+    this.navCount = this.navService.getNavCount();
   }
 
 }

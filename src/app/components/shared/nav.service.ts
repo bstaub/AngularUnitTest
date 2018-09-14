@@ -11,11 +11,16 @@ export class NavService {
     this.nav = [
       {name: '', title: 'Home'},
       {name: 'bilder', title: 'Bilder'},
+      {name: 'web', title: 'Web'},
+      {name: 'game', title: 'Game'},
       {name: 'content', title: 'Content'},
 
     ];
   }
   getNav(): Nav[] {
     return this.nav;
+  }
+  getNavCount(): number {
+    return (100 / this.nav.length);
   }
 }

@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: '', component: StartseiteComponent, pathMatch: 'full' },
   { path: 'bilder', component: BilderComponent },
   { path: 'content', component: ContentComponent },
+  // {path: ':page', component: PagesComponent},
   { path: '**', component: NotfoundComponent },
 
   ];
